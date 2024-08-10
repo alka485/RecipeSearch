@@ -19,4 +19,9 @@ export const AppNameComponent = styled.div`
        align-item:center;
 `;
 
-export const AppIcon = styled.img``;
+export const AppIcon = styled.img`
+      width : 36px;
+      height:36px;
+      margin:15px;
+
+`;
