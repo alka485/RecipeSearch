@@ -11,7 +11,7 @@ function App() {
     <>
     <Header>
       <AppNameComponent>
-      <p>Hello</p>
+        Recipe Search
       </AppNameComponent>
 
     </Header>
