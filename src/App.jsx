@@ -2,7 +2,7 @@
 import styled from 'styled-components'
 import axios from 'axios'
 //---------------------------------------------------------import dependency
-import {Header, AppNameComponent} from './components/Header'
+import {Header, AppNameComponent,AppIcon} from './components/Header'
 import './App.css'
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
     <>
     <Header>
       <AppNameComponent>
+        <AppIcon src='../public/hamburger.svg'/>
         Recipe Search
       </AppNameComponent>
 

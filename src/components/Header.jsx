@@ -18,3 +18,5 @@ export const AppNameComponent = styled.div`
        display:flex;
        align-item:center;
 `;
+
+export const AppIcon = styled.img``;
