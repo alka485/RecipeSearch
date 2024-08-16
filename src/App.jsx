@@ -7,6 +7,13 @@ import './App.css'
 
 function App() {
 
+  const fetchRecipe = async (searchString) => {
+    const response = await axios.get(`https://api.edamam.com/search?q=${searchString}&app_id=${import.meta.env.VITE_APP_ID }&app_key=${import.meta.env.VITE_APP_KEY}`);
+    console.log(response);
+    
+
+  }
+
   const handleChange =(e) => {
     console.log(e.target.value);
     
