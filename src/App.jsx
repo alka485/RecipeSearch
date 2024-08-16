@@ -15,6 +15,11 @@ function App() {
         Recipe Search
       </AppNameComponent>
       <SearchComponent>
+        <SearchIcon src='../public/search-icon.svg'/>
+        <SearchInput placeholder='Search Recipe'/>
+        
+
+        
 
       </SearchComponent>
 
