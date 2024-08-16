@@ -6,6 +6,11 @@ import {Header, AppNameComponent,AppIcon,SearchComponent,SearchIcon,SearchInput}
 import './App.css'
 
 function App() {
+
+  const handleChange =(e) => {
+    console.log(e.target.value);
+    
+  }
   
   return (
     <>
@@ -16,7 +21,7 @@ function App() {
       </AppNameComponent>
       <SearchComponent>
         <SearchIcon src='../public/search-icon.svg'/>
-        <SearchInput placeholder='Search Recipe'/>
+        <SearchInput placeholder='Search Recipe' onChange={handleChange}/>
         
 
         
