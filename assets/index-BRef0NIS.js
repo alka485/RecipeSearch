@@ -73,4 +73,4 @@ Error generating stack: `+o.message+`
         font-size:15px;
         font-weight:bold;
         outline:none;
-`;function Mm(){return Qe.jsx(Qe.Fragment,{children:Qe.jsxs(Rm,{children:[Qe.jsxs($m,{children:[Qe.jsx(Lm,{src:"../public/hamburger.svg"}),"Recipe Search"]}),Qe.jsxs(Im,{children:[Qe.jsx(Om,{src:"../public/search-icon.svg"}),Qe.jsx(Dm,{placeholder:"Search Recipe"})]})]})})}Rf(document.getElementById("root")).render(Qe.jsx(Mn.StrictMode,{children:Qe.jsx(Mm,{})}));
+`;function Mm(){const e=t=>{console.log(t.target.value)};return Qe.jsx(Qe.Fragment,{children:Qe.jsxs(Rm,{children:[Qe.jsxs($m,{children:[Qe.jsx(Lm,{src:"../public/hamburger.svg"}),"Recipe Search"]}),Qe.jsxs(Im,{children:[Qe.jsx(Om,{src:"../public/search-icon.svg"}),Qe.jsx(Dm,{placeholder:"Search Recipe",onChange:e})]})]})})}Rf(document.getElementById("root")).render(Qe.jsx(Mn.StrictMode,{children:Qe.jsx(Mm,{})}));
