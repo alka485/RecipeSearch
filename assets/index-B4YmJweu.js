@@ -58,7 +58,19 @@ Error generating stack: `+o.message+`
       margin:15px;
 
 `,Im=en.div`
-       
-
-
-`,Om=en.img``,Dm=en.input``;function Mm(){return Qe.jsx(Qe.Fragment,{children:Qe.jsxs(Rm,{children:[Qe.jsxs($m,{children:[Qe.jsx(Lm,{src:"../public/hamburger.svg"}),"Recipe Search"]}),Qe.jsxs(Im,{children:[Qe.jsx(Om,{src:"../public/search-icon.svg"}),Qe.jsx(Dm,{placeholder:"Search Recipe"})]})]})})}Rf(document.getElementById("root")).render(Qe.jsx(Mn.StrictMode,{children:Qe.jsx(Mm,{})}));
+       display:flex;
+       flex-direction: row;
+       background-color: white;
+       padding:10px;
+       border-radius:6px;
+       width:50%;
+`,Om=en.img`
+       width:32px;
+       height:32px;
+ `,Dm=en.input`
+        border: none;
+        margin-left: 15px;
+        font-size:15px;
+        font-weight:bold;
+        outline:none;
+`;function Mm(){return Qe.jsx(Qe.Fragment,{children:Qe.jsxs(Rm,{children:[Qe.jsxs($m,{children:[Qe.jsx(Lm,{src:"../public/hamburger.svg"}),"Recipe Search"]}),Qe.jsxs(Im,{children:[Qe.jsx(Om,{src:"../public/search-icon.svg"}),Qe.jsx(Dm,{placeholder:"Search Recipe"})]})]})})}Rf(document.getElementById("root")).render(Qe.jsx(Mn.StrictMode,{children:Qe.jsx(Mm,{})}));
