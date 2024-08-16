@@ -25,3 +25,13 @@ export const AppIcon = styled.img`
       margin:15px;
 
 `;
+
+export const SearchComponent = styled.div`
+       
+
+
+`;
+
+export const SearchIcon = styled.img``;
+
+export const SearchInput = styled.input``;
