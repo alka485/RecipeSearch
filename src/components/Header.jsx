@@ -27,11 +27,23 @@ export const AppIcon = styled.img`
 `;
 
 export const SearchComponent = styled.div`
-       
-
-
+       display:flex;
+       flex-direction: row;
+       background-color: white;
+       padding:10px;
+       border-radius:6px;
+       width:50%;
 `;
 
-export const SearchIcon = styled.img``;
+export const SearchIcon = styled.img`
+       width:32px;
+       height:32px;
+ `;
 
-export const SearchInput = styled.input``;
+export const SearchInput = styled.input`
+        border: none;
+        margin-left: 15px;
+        font-size:15px;
+        font-weight:bold;
+        outline:none;
+`;
