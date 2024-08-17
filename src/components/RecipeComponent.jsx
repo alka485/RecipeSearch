@@ -16,11 +16,11 @@ const RecipeComponent = (props) => {
         </thead>
         <tbody>
             {recipeObj.ingredients.map((ingredientObj) => (
-                // <tr key = {ingredientObj.text}>
-                //     <td>{ingredientObj.text}</td>
-                //     <td>{ingredientObj.weight}</td>
-                // </tr>
-                console.log(ingredientObj)
+                <tr key = {ingredientObj.text}>
+                    <td>{ingredientObj.text}</td>
+                    <td>{ingredientObj.weight}</td>
+                </tr>
+                //console.log(ingredientObj)
                 
             ))}
         </tbody>
