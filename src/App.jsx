@@ -5,19 +5,19 @@ import { useState } from 'react'
 //---------------------------------------------------------import dependency
 import {Header, AppNameComponent,AppIcon,SearchComponent,SearchIcon,SearchInput} from './components/Header'
 import './App.css'
+import RecipeComponent from './components/RecipeComponent'
 
 function App() {
     const [timeoutId, settimeoutId] = useState();
     const [recipeList, setRecipeList] = useState([]);
 
   const fetchRecipe = async (searchString) => {
-    // console.log(searchString);
+     console.log(searchString);
     // console.log(import.meta.env.VITE_APPID, import.meta.env.VITE_APPKEY);
     try{
       const response = await axios.get(`https://api.edamam.com/search?q=${searchString}&app_id=${import.meta.env.VITE_APPID}&app_key=${import.meta.env.VITE_APPKEY}`);
-      //console.log(response);
-      setRecipeList(response.data)
-
+      console.log(response);
+      setRecipeList(response.data.hits)
     } catch (err) {
       console.error(err);
       
@@ -44,13 +44,11 @@ function App() {
       <SearchComponent>
         <SearchIcon src='/search-icon.svg'/>
         <SearchInput placeholder='Search Recipe' onChange={handleChange}/>
-        
-
-        
-
       </SearchComponent>
-
     </Header>
+    {recipeList.map((recipeObj,index) => (
+      <RecipeComponent key = {index} recipeObj = {recipeList}/>
+    ))}
       
     </>
   )
