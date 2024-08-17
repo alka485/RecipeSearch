@@ -4,9 +4,9 @@ import React, {useState} from 'react'
 
 const RecipeComponent = (props) => {
     console.log(props);
-    const [show, setShow] =useState(false);
+    const [show, setShow] =useState([]);
     const {recipeObj} = props;
-    console.log(recipeObj);
+    //console.log(recipeObj);
     
   return (
     <table>
@@ -16,10 +16,12 @@ const RecipeComponent = (props) => {
         </thead>
         <tbody>
             {recipeObj.ingredients.map((ingredientObj) => (
-                <tr key = {ingredientObj.text}>
-                    <td>{ingredientObj.text}</td>
-                    <td>{ingredientObj.weight}</td>
-                </tr>
+                // <tr key = {ingredientObj.text}>
+                //     <td>{ingredientObj.text}</td>
+                //     <td>{ingredientObj.weight}</td>
+                // </tr>
+                console.log(ingredientObj)
+                
             ))}
         </tbody>
     </table>

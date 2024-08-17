@@ -46,9 +46,10 @@ function App() {
         <SearchInput placeholder='Search Recipe' onChange={handleChange}/>
       </SearchComponent>
     </Header>
-    {recipeList.map((recipeObj,index) => (
+    { recipeList.length ? 
+      recipeList.map((recipeObj,index) => (
       <RecipeComponent key = {index} recipeObj = {recipeList}/>
-    ))}
+    )) : <img src='./hamburger.svg'/> }
       
     </>
   )
