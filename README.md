@@ -59,9 +59,17 @@ VITE_APPKEY=your_app_key
 `
 
 * Start the development server:
-`npm run dev
-Open your browser and visit http://localhost:5173.
-`
+`npm run dev`
+Open your browser and visit `http://localhost:5173`.
+
+### Usage
+
+* Enter an ingredient or dish name in the search bar.
+
+* The app will display a list of recipes that match your search query.
+
+* Click on a recipe to view its ingredients and preparation instructions.
+
 
 
 
