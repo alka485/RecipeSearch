@@ -58,10 +58,11 @@ function App() {
       </SearchComponent>
     </Header>
     <RecipeListContainer>
-       {
+       { recipeList.length ? 
         recipeList.map((recipeObj,index) => (
           <RecipeComponent key={index} recipeObj ={recipeObj.recipe} />
-        ))
+        )) : <Placeholder src = "./hamburger.svg"/>
+
        }
 
     </RecipeListContainer>

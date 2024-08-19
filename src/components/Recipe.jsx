@@ -12,7 +12,7 @@ export const RecipeListContainer = styled.div`
        justify-content: space-evenly;
 `;
 
-export const ReceipeContainer = styled.div`
+export const RecipeContainer = styled.div`
     display:flex;
     flex-direction: column;
     padding: 10px;

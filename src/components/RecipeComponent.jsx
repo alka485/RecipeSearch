@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React, {useState} from 'react'
-import {ReceipeContainer,CoverImage,RecipeName,IngredientsText,SeeMoreText} from './Recipe'
+import {RecipeContainer,CoverImage,RecipeName,IngredientsText,SeeMoreText} from './Recipe'
 import { Dialog, DialogTitle,DialogContent,DialogActions } from '@mui/material';
 
 const RecipeComponent = ({recipeObj}) => {
@@ -10,7 +10,7 @@ const RecipeComponent = ({recipeObj}) => {
 
   return (
     <>
-    <Dialog>
+    <Dialog open ={show}>
         <DialogTitle>Ingredients</DialogTitle>
         <DialogContent>
     <table>
@@ -28,15 +28,19 @@ const RecipeComponent = ({recipeObj}) => {
         </tbody>
     </table>
         </DialogContent>
+        <DialogActions>
+            <IngredientsText onClick={() => window.open(recipeObj.url)}>See More</IngredientsText>
+            <SeeMoreText onClick={()=>setShow("")}>Close</SeeMoreText>
+        </DialogActions>
 
     </Dialog>
 
-    <ReceipeContainer>
+    <RecipeContainer>
         <CoverImage src={recipeObj.image}/>
         <RecipeName>{recipeObj.label}</RecipeName>
-        <IngredientsText>Ingredients</IngredientsText>
-        <SeeMoreText>See Complete Recipe</SeeMoreText>
-    </ReceipeContainer>
+        <IngredientsText onClick={()=> setShow(true)}>Ingredients</IngredientsText>
+        <SeeMoreText onClick={()=> window.open(recipeObj.url)}>See Complete Recipe</SeeMoreText>
+    </RecipeContainer>
     </>
   )
 }
