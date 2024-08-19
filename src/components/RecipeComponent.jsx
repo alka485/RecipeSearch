@@ -10,7 +10,9 @@ const RecipeComponent = ({recipeObj}) => {
 
   return (
     <>
-    
+    <Dialog>
+        <DialogTitle>Ingredients</DialogTitle>
+        <DialogContent>
     <table>
         <thead>
             <th>Ingredients</th>
@@ -25,6 +27,10 @@ const RecipeComponent = ({recipeObj}) => {
             ))}
         </tbody>
     </table>
+        </DialogContent>
+
+    </Dialog>
+
     <ReceipeContainer>
         <CoverImage src={recipeObj.image}/>
         <RecipeName>{recipeObj.label}</RecipeName>
