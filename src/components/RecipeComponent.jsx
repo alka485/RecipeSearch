@@ -5,23 +5,31 @@ import React, {useState} from 'react'
 const RecipeComponent = ({recipeObj}) => {
     //console.log(props);
     const [show, setShow] =useState([]);
-    // const {recipeObj} = props;
-    //console.log(recipeObj);
-    
-    console.log(recipeObj);
-    
 
-    
   return (
     <>
+    <table>
+        <thead>
+            <th>Ingredients</th>
+            <th>Weight</th>
+        </thead>
+        <tbody>
+            {recipeObj.ingredients.map((ingredientObj,index)=>(
+                <tr key={index}>
+                    <td>{ingredientObj.text}</td>
+                    <td>{ingredientObj.weight}</td>
+                </tr>
+            ))}
+        </tbody>
+    </table>
     
-<ul>
+{/* <ul>
      {recipeObj.ingredients.map((ing,index) => (
         <li key={index}>{ing.text}</li>
         
      ))}
 
-</ul>
+</ul> */}
     
     
     </>

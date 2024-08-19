@@ -6,6 +6,7 @@ import { useState } from 'react'
 import {Header, AppNameComponent,AppIcon,SearchComponent,SearchIcon,SearchInput} from './components/Header'
 import './App.css'
 import RecipeComponent from './components/RecipeComponent'
+import {RecipeListContainer} from './components/Recipe'
 
 function App() {
     const [timeoutId, settimeoutId] = useState();
@@ -46,11 +47,14 @@ function App() {
         <SearchInput placeholder='Search Recipe' onChange={handleChange}/>
       </SearchComponent>
     </Header>
+    <RecipeListContainer>
        {
         recipeList.map((recipeObj,index) => (
           <RecipeComponent key={index} recipeObj ={recipeObj.recipe} />
         ))
        }
+
+    </RecipeListContainer>
 
     </>
   )
