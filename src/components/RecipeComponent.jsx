@@ -2,29 +2,29 @@
 /* eslint-disable no-unused-vars */
 import React, {useState} from 'react'
 
-const RecipeComponent = (props) => {
-    console.log(props);
+const RecipeComponent = ({recipeObj}) => {
+    //console.log(props);
     const [show, setShow] =useState([]);
-    const {recipeObj} = props;
+    // const {recipeObj} = props;
     //console.log(recipeObj);
     
+    console.log(recipeObj);
+    
+
+    
   return (
-    <table>
-        <thead>
-            <th>Ingredients</th>
-            <th>Weight</th>
-        </thead>
-        <tbody>
-            {recipeObj.ingredients.map((ingredientObj) => (
-                <tr key = {ingredientObj.text}>
-                    <td>{ingredientObj.text}</td>
-                    <td>{ingredientObj.weight}</td>
-                </tr>
-                //console.log(ingredientObj)
-                
-            ))}
-        </tbody>
-    </table>
+    <>
+    
+<ul>
+     {recipeObj.ingredients.map((ing,index) => (
+        <li key={index}>{ing.text}</li>
+        
+     ))}
+
+</ul>
+    
+    
+    </>
   )
 }
 

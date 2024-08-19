@@ -16,7 +16,7 @@ function App() {
     // console.log(import.meta.env.VITE_APPID, import.meta.env.VITE_APPKEY);
     try{
       const response = await axios.get(`https://api.edamam.com/search?q=${searchString}&app_id=${import.meta.env.VITE_APPID}&app_key=${import.meta.env.VITE_APPKEY}`);
-      console.log(response);
+      //console.log(response);
       setRecipeList(response.data.hits)
     } catch (err) {
       console.error(err);
@@ -38,7 +38,7 @@ function App() {
     <>
     <Header>
       <AppNameComponent>
-        <AppIcon src='../public/hamburger.svg'/>
+        <AppIcon src='./hamburger.svg'/>
         Recipe Search
       </AppNameComponent>
       <SearchComponent>
@@ -46,11 +46,17 @@ function App() {
         <SearchInput placeholder='Search Recipe' onChange={handleChange}/>
       </SearchComponent>
     </Header>
-    { recipeList.length ? 
+    {/* { recipeList.length ? 
       recipeList.map((recipeObj,index) => (
       <RecipeComponent key = {index} recipeObj = {recipeList}/>
     )) : <img src='./hamburger.svg'/> }
-      
+       */}
+       {
+        recipeList.map((recipeObj,index) => (
+          <RecipeComponent key={index} recipeObj ={recipeObj.recipe} />
+        ))
+       }
+
     </>
   )
 }
