@@ -40,6 +40,29 @@ A responsive web application that allows users to search for recipes by ingredie
 
 * Vite: Fast front-end build tool
 
+### Installation
+
+* Clone the repository:
+` git clone https://github.com/alka485/RecipeSearch.git
+  cd recipe-search-website`
+
+* Install dependencies:
+`npm install`
+
+* Set up environment variables:
+
+Create a .env file in the root of the project.
+Add your Edamam API credentials to the .env file as follows:
+`
+VITE_APPID=your_app_id
+VITE_APPKEY=your_app_key
+`
+
+* Start the development server:
+`npm run dev
+Open your browser and visit http://localhost:5173.
+`
+
 
 
 
