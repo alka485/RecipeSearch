@@ -23,14 +23,7 @@ const RecipeComponent = ({recipeObj}) => {
         </tbody>
     </table>
     
-{/* <ul>
-     {recipeObj.ingredients.map((ing,index) => (
-        <li key={index}>{ing.text}</li>
-        
-     ))}
 
-</ul> */}
-    
     
     </>
   )
