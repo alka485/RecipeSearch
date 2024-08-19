@@ -14,6 +14,32 @@ A responsive web application that allows users to search for recipes by ingredie
 
 ### Demo
 
-Github Link [Github](https://github.com/alka485/RecipeSearch.git).
+* Github Link [Github](https://github.com/alka485/RecipeSearch.git).
+
+* Deployed Link [live demo](https://recipesearch-1.onrender.com)
+
+### Features
+
+* Search for recipes by ingredient or dish name
+
+* View recipe details, including ingredients and preparation instructions
+
+* Responsive design, works on both desktop and mobile devices
+
+* Debounced search input to optimize API calls
+
+* Error handling for API requests
+
+### Technologies Used
+
+* React: JavaScript library for building user interfaces
+
+* Styled Components: For styling React components
+
+* Axios: Promise-based HTTP client for making API requests
+
+* Vite: Fast front-end build tool
+
+
 
 
