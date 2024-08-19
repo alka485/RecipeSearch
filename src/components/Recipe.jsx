@@ -10,6 +10,7 @@ export const RecipeListContainer = styled.div`
        padding: 30px;
        gap: 20px;
        justify-content: space-evenly;
+       background-color: #fff;
 `;
 
 export const RecipeContainer = styled.div`

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const Header = styled.div`
        color:white;
        background-color: black;
-       display:flex;
+       display: flex;
        padding: 20px;
        flex-direction:row;
        align-items:center;
@@ -15,8 +15,8 @@ export const Header = styled.div`
 `;
 
 export const AppNameComponent = styled.div`
-       display:flex;
-       align-item:center;
+       display: flex;
+       align-item: center;
 `;
 
 export const AppIcon = styled.img`
@@ -45,5 +45,6 @@ export const SearchInput = styled.input`
         margin-left: 15px;
         font-size:15px;
         font-weight:bold;
-        outline:none;
+        outline: none;
+        background-color: #fff;
 `;
