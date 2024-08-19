@@ -14,6 +14,6 @@ A responsive web application that allows users to search for recipes by ingredie
 
 ### Demo
 
-Github Link [](https://github.com/alka485/RecipeSearch.git)
+Github Link [Github](https://github.com/alka485/RecipeSearch.git).
 
 
