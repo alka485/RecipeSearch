@@ -47,4 +47,5 @@ export const SearchInput = styled.input`
         font-weight:bold;
         outline: none;
         background-color: #fff;
+        color:black;
 `;
