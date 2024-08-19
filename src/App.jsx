@@ -8,13 +8,23 @@ import './App.css'
 import RecipeComponent from './components/RecipeComponent'
 import {RecipeListContainer} from './components/Recipe'
 
+const Container = styled.div`
+      display: flex;
+      flex-direction: column; 
+     `;
+
+const Placeholder = styled.img`
+      width: 120px;
+      height:120px;
+      margin:200px;
+      opacity:50%;      
+`;     
+
 function App() {
     const [timeoutId, settimeoutId] = useState();
     const [recipeList, setRecipeList] = useState([]);
 
   const fetchRecipe = async (searchString) => {
-     console.log(searchString);
-    // console.log(import.meta.env.VITE_APPID, import.meta.env.VITE_APPKEY);
     try{
       const response = await axios.get(`https://api.edamam.com/search?q=${searchString}&app_id=${import.meta.env.VITE_APPID}&app_key=${import.meta.env.VITE_APPKEY}`);
       //console.log(response);
@@ -36,7 +46,7 @@ function App() {
   };
   
   return (
-    <>
+    <Container>
     <Header>
       <AppNameComponent>
         <AppIcon src='./hamburger.svg'/>
@@ -56,7 +66,7 @@ function App() {
 
     </RecipeListContainer>
 
-    </>
+    </Container>
   )
 }
 
