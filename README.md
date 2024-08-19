@@ -1,4 +1,4 @@
-### Recipe Search Website
+# Recipe Search Website
 
 A responsive web application that allows users to search for recipes by ingredients or dish names. The app fetches data from the Edamam Recipe API and displays a list of recipes that match the user's search query.
 
