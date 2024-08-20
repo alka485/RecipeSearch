@@ -70,6 +70,19 @@ Open your browser and visit `http://localhost:5173`.
 
 * Click on a recipe to view its ingredients and preparation instructions.
 
+### API Reference
+
+* Edamam Recipe API
+
+* Base URL: https://api.edamam.com/search
+
+#### Parameters:
+
+* q: Search query (ingredient or dish name)
+
+* app_id: Your Edamam App ID
+
+* app_key: Your Edamam App Key
 
 
 
