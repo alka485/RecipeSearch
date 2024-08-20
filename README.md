@@ -51,16 +51,19 @@ A responsive web application that allows users to search for recipes by ingredie
 
 * Set up environment variables:
 
-Create a .env file in the root of the project.
-Add your Edamam API credentials to the .env file as follows:
-`
-VITE_APPID=your_app_id
-VITE_APPKEY=your_app_key
-`
+* * Create a .env file in the root of the project.
+
+* * Add your Edamam API credentials to the .env file as follows:
+
+`VITE_APPID=your_app_id`
+
+`VITE_APPKEY=your_app_key`
+
 
 * Start the development server:
 `npm run dev`
-Open your browser and visit `http://localhost:5173`.
+
+* Open your browser and visit `http://localhost:5173`.
 
 ### Usage
 
